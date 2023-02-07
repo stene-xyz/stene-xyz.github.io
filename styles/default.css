@@ -1,4 +1,26 @@
 body {
-    margin: 0;
+    margin-top: 40px;
+    margin-left: 15%;
+    margin-right: 15%;
+    text-align: center;
     font-family: monospace;
+    background-color: #171717;
+    color: #fbff00;
+    text-shadow: -3px 3px #797300;
+    font-style: italic;
+    font-size: 1.3em;
+}
+
+.purple {
+    color: #c90fbd;
+    text-shadow: -3px 3px #470373;
+}
+
+a, a:hover, a:visited, a:disabled {
+    color: #0090c4;
+    text-shadow: -3px 3px #004158;
+}
+
+h1, h2, h3 {
+    margin: 5px;
 }
