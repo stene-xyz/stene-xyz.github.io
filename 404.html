@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>stene.xyz</title>
+    <link href="styles/default.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <h1>404 not found</h1>
+    <h3 class="purple" id="tagline"></h3>
+    <br><br>
+
+    <script>
+      var taglines = ["you done fucked up", "the number you have dialed is not in service at this time"];
+      document.getElementById("tagline").innerHTML = taglines[Math.floor(Math.random() * taglines.length)];
+    </script>
+  </body>
+</html>
