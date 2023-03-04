@@ -1,0 +1,5 @@
+Rev. B Changelog
++ Added flash chip
++ Added reset button
++ Added pullup resistor
++ Added mounting holes to board view
