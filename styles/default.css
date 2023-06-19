@@ -26,3 +26,19 @@ a, a:hover, a:visited, a:disabled {
 h1, h2, h3 {
     margin: 5px;
 }
+
+.content {
+    position: relative;
+    margin: auto;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+}
+
+table, th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #fbff00;
+    border-collapse: collapse;
+}
