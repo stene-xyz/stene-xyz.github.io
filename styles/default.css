@@ -8,9 +8,10 @@ body {
     font-family: 'Cousine', monospace;
     background-color: #171717;
     color: #fbff00;
-    text-shadow: -3px 3px #797300;
+    text-shadow: -2px 2px #797300;
     font-style: italic;
     font-size: 1.3em;
+    margin: 0;
 }
 
 .purple {
@@ -41,4 +42,5 @@ table, th, td {
     text-align: left;
     border: 1px solid #fbff00;
     border-collapse: collapse;
+    white-space: nowrap;
 }
