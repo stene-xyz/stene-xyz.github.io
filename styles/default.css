@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Cousine&display=swap');
 
 body {
-    margin-top: 40px;
+    max-height: 100vh;
+    padding-top: 40px;
+    margin-top: 0;
+    margin-bottom: 0;
     margin-left: 15%;
     margin-right: 15%;
     text-align: center;
@@ -10,6 +13,11 @@ body {
     color: #fbff00;
     text-shadow: -2px 2px #797300;
     font-style: italic;
+    overflow: hidden;
+}
+
+hr {
+    border-color: #fbff00;
 }
 
 .purple {
@@ -26,15 +34,6 @@ h1, h2, h3 {
     margin: 5px;
 }
 
-.content {
-    position: relative;
-    margin: auto;
-    top: 50%;
-    transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-}
-
 table, th, td {
     padding: 10px;
     text-align: left;
@@ -42,3 +41,42 @@ table, th, td {
     border-collapse: collapse;
     white-space: nowrap;
 }
+
+.project-showcase {
+    text-align: left;
+    max-width: 30vw;
+    width: 30vw;
+    border: 2px solid #fbff00;
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.content-pane {
+    height: 60vh;
+    min-height: 60vh;
+    max-height: 60vh;
+    overflow: scroll;
+}
+
+.animate-opacity{
+    animation:opac 0.8s
+}
+
+button {
+    background: none!important;
+    border: none;
+    padding: 0!important;
+    color: #0090c4;
+    text-shadow: -2px 2px #004158;
+    font-family: 'Cousine', monospace;
+    font-style: italic;
+    font-size: 1.1em;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+@keyframes opac{from{opacity:0} to{opacity:1}}
