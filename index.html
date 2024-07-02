@@ -2,13 +2,13 @@
 <html>
   <head>
     <title>stene.xyz</title>
-    <link href="styles/default.css" rel="stylesheet" type="text/css">
+    <link href="https://stene.xyz/styles/default.css" rel="stylesheet" type="text/css">
   </head>
   <body style="height: 100vh;max-height:100vh;">
     <div class="content animate-opacity">
       <h1>stene.xyz</h1>
       <h2 class="purple" id="tagline">a fan of noscript, are we?</h2>
-      <button onclick="switchPane('projects')">projects</button> <button onclick="switchPane('contact')">contact</button> <button onclick="github()">github</button>
+      <button onclick="switchPane('projects')">projects</button> <button onclick="switchPane('contact')">contact</button> <button onclick="github()">github</button> <button onclick="resume()">resume</button>
       <br><br><br><hr><br><br>
 
       <div class="content-pane animate-opacity" id="contact">
@@ -161,6 +161,10 @@
 
       function github() {
         document.location = "https://github.com/stene-xyz";
+      }
+      
+      function resume() {
+        document.location = "https://stene.xyz/resume/index.html";
       }
 
       switchPane('projects');
