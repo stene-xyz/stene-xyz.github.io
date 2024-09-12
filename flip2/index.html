@@ -7,7 +7,7 @@
   <body style="overflow: scroll">
     <div class="content animate-opacity">
       <h1>stene.xyz</h1>
-      <h2 class="purple" id="tagline">TCL Flip 2 Jailbreak (KEKA Firmware Version)</h2>
+      <h2 class="purple" id="tagline">TCL Flip 2 Jailbreak (KEFH Firmware Version)</h2>
       <br><br><hr><br><br>
 
       <h2>Thanks to neutronscott</h2>
@@ -18,9 +18,9 @@
       <h2>Guide (This is probably what you're here for)</h2>
       <ol style="max-width: 50vw;text-align:left;margin-left:auto;margin-right:auto;">
         <b class="purple">Part 1: Preparation</b>
-        <li>Download <a href="https://developer.android.com/tools/releases/platform-tools">platform-tools</a></li>
-        <li>Download <a href="/flip2/autobooter.exe">neutronscott's Autobooter</a></li>
-        <li>Download <a href="/flip2/boot-stenexyz.img">My patched boot image</a></li>
+        <li>Download <a href="https://developer.android.com/tools/releases/platform-tools">platform-tools</a> - extract this to it's own folder</li>
+        <li>Download <a href="https://drive.proton.me/urls/A0H982DKTC#Qu8iDCOdW2bK">KEFH super.img</a> - needed if you're on KEKA. Put this in the platform-tools folder</li>
+        <li>Download <a href="/flip2/jailbreak.zip">jailbreak.zip</a> - extract this into the platform-tools folder</li>
         <br>
 
         <b class="purple">Part 2: Unlocking Device</b>
@@ -32,9 +32,13 @@
 
         <b class="purple">Part 3: Jailbreak</b>
         <li>Flash my patched boot image by running "fastboot flash boot boot-stenexyz.img"</li>
+        <li>Flash the super.img by running "fastboot flash super super.img" - this will take up to an hour. It will look frozen at 40%. Leave it be.</li>
+        <li>Flash vbmeta with "fastboot flash vbmeta --disable-verity --disable-verification vbmeta</li>
+        <li>Flash vbmeta_system with "fastboot flash vbmeta_system --disable-verity --disable-verification vbmeta_system</li>
+        <li>Flash vbmeta_vendor with "fastboot flash vbmeta_vendor --disable-verity --disable-verification vbmeta_vendor</li>
         <li>Reboot the phone by running "fastboot reboot"</li>
         <li>Give the phone a minute or two to boot - if it doesn't, scroll down to Unbrick Guide</li>
-        <li>On the phone's home menu, type "*#*#217703#*#*</li>
+        <li>On the phone's home menu, type "*#*#217703#*#*"</li>
         <li>In the list, you should find Magisk - if it's missing, reboot and look again</li>
         <li>Open Magisk and allow it to install, then reboot again</li>
         <li>Follow the previous instructions to re-open Magisk and allow it to patch the ROM</li>
@@ -99,5 +103,9 @@
       <br>
       <b>installing apps</b><br>
       installing apps needs ro.vendor.tct.endurance to be reset<br>
+      <br><br>
+
+      <h2>Article Changelog</h2>
+      <b>September 11, 2024:</b> Added (apparently important) sections about flashing super.img and disabling dm-verity.
   </body>
 </html>
